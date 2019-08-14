@@ -18,12 +18,12 @@
 
 include_once "Mage/Adminhtml/controllers/Catalog/ProductController.php";
 
-class Iksanika_Productrelater_Catalog_ProductController extends Mage_Adminhtml_Catalog_ProductController 
+class Iksanika_Productrelater_Adminhtml_ProductrelaterController extends Mage_Adminhtml_Catalog_ProductController 
 { 
     protected function _construct() 
     { 
-        $this->setUsedModuleName('Iksanika_Productrelater'); 
-    } 
+        $this->setUsedModuleName('Iksanika_Productrelater');
+    }
     
     public function indexAction() 
     { 
@@ -136,25 +136,32 @@ class Iksanika_Productrelater_Catalog_ProductController extends Mage_Adminhtml_C
             try {
                 foreach ($productIds as $productId) 
                 {
+//echo '<br/>step 1: '.$productId;
                     $product = Mage::getModel('catalog/product')->load($productId);
                     $link = $this->getRelatedLinks($productIds, $product->getRelatedProducts(), $productId);
                     $product->setRelatedLinkData($link);
+//echo '<br/>step 2: '.$productId;
                     
                     if ($this->massactionEventDispatchEnabled)
                     {
                         Mage::dispatchEvent('catalog_product_prepare_save', array('product' => $product, 'request' => $this->getRequest()));
                     }
+//echo '<br/>step 3: '.$productId;
                     $product->save();
+//echo '<br/>step 4: '.$productId;
                 }
                 $this->_getSession()->addSuccess($this->__('Total of %d record(s) were successfully related to each other.', count($productIds)));
             } catch (Exception $e) 
             {
+//var_dump($productIds);
+//die();
                 $this->_getSession()->addError($e->getMessage());
             }
         }else
         {
             $this->_getSession()->addError($this->__('Please select product(s)').'. '.$this->__('You should select checkboxes for each product row which should be updated. You can click on checkboxes or use CTRL+Click on product row which should be selected.'));
         }
+//die();
         $this->_redirect('*/*/index');
     }
     

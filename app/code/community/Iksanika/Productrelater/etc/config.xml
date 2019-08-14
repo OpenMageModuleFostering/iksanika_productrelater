@@ -2,20 +2,29 @@
 <config>
     <modules>
         <Iksanika_Productrelater>
-            <version>1.0.0</version>
+            <version>1.0.2</version>
         </Iksanika_Productrelater>
     </modules>
     <admin>
         <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <productrelater after="Mage_Adminhtml">Iksanika_Productrelater_Adminhtml</productrelater>
+                    </modules>
+                </args>
+            </adminhtml>
+<!--            
             <productrelater>
-                <!-- should be set to "admin" when overloading admin stuff (?) -->                                         
+                < ! - - should be set to "admin" when overloading admin stuff (?) - - >
                 <use>admin</use>
                 <args>
                     <module>Iksanika_Productrelater</module>
-                    <!-- This is used when "catching" the rewrite above -->
+                    < ! - - This is used when "catching" the rewrite above - - >
                     <frontName>productrelater</frontName>
                 </args>
             </productrelater>
+-->
         </routers>
     </admin>
     <global>
@@ -60,7 +69,8 @@
                     <productrelater module="productrelater">
                         <title>Mass Product Relater</title>
                         <sort_order>0</sort_order>
-                        <action>productrelater/catalog_product</action>
+                        <!-- <action>productrelater/catalog_product</action> -->
+                        <action>adminhtml/productrelater/index</action>
                     </productrelater>
                 </children>
             </catalog>

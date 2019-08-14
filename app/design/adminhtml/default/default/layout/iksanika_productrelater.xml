@@ -1,7 +1,14 @@
 <?xml version="1.0"?>
 <layout>
-    <default>
+    <adminhtml_productrelater_index>
+<!--    <default> -->
         <reference name="head">
+            <action method="addJs"><js>Iksanika/productrelater/jquery-1.9.1.min.js</js></action>
+            <action method="addJs"><js>Iksanika/productrelater/relaterproducts.js</js></action>
+            <action method="addJs"><js>Iksanika/productrelater/relatergrid.js</js></action>
+            <action method="addJs"><js>Iksanika/productrelater/egsupplemental.js</js></action>
+            <action method="addCss"><css>Iksanika/productrelater/resources/css/productrelater.css</css></action>
+            <!--
             <action method="addJs">
                 <script>Iksanika/productrelater/jquery-1.9.1.min.js</script>
             </action>
@@ -18,6 +25,8 @@
                 <type>js_css</type>
                 <name>Iksanika/productrelater/resources/css/productrelater.css</name>
             </action>
+            -->
         </reference> 
-    </default>
+<!--    </default> -->
+    </adminhtml_productrelater_index>
 </layout>   
