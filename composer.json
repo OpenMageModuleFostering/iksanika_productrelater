@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Iksanika_Productrelater",
+    "type": "magento-module",
+    "license": "IKS-LICENSE",
+    "homepage": "",
+    "description": "Mass assign up-sell, cross-sell and related products  easily - hands, 2-way, multi-way algorithms available.",
+    "authors": [
+    {
+        "name": "Iksanika",
+        "email": "info@iksanika.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

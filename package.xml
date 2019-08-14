@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+    <name>Iksanika_Productrelater</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.iksanika.com/products/IKS-LICENSE.txt">IKS-LICENSE</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Mass assign up-sell, cross-sell and related products  easily - hands, 2-way, multi-way algorithms available.</summary>
+    <description>Save up to 98% of your time and grow up revenue up to additional 40% on cross-, up- and related - sell products in your Magento store. &#xD;
+&#xD;
+* One Page Bulk Products Update With In-grid Editable Fields for Up-Sell, Cross-Sell and Related products ids fields which allow you easy filter by cross-sell,up-sell, related products and add, change, delete cross-sell,up-sell, related products on one page for list of products and with one click update feature.&#xD;
+* Mass Product Relater actions: Mass Relating Products: One-way relate, multi-relate, or un-relate Mass Cross-selling Products: Mass cross-selling products: One-way cross-sell, multi-cross-sell, or un-cross-sell Mass Up-selling Products: One-way up-sell, un-up-sell</description>
+    <notes>Initial-basic version of Mass Product Relater by Iksanika for Magento store.</notes>
+    <authors><author><name>Iksanika</name><user>iksanika</user><email>info@iksanika.com</email></author></authors>
+    <date>2013-05-11</date>
+    <time>04:34:17</time>
+    <contents><target name="magecommunity"><dir name="Iksanika"><dir name="Productrelater"><dir name="Block"><dir name="Catalog"><dir name="Product"><file name="Grid.php" hash="a0e67eacaa45eb0acf00ed95117d5403"/></dir><file name="Product.php" hash="3f4c56185d797622cdac7b2a9e0dfe30"/></dir><dir name="Widget"><dir name="Grid"><dir name="Column"><dir name="Renderer"><file name="Number.php" hash="ff71da7c2f74726dd0efccd752e393f6"/></dir></dir><file name="Column.php" hash="20d990d79cdd6e975428f6e99d2f2641"/><file name="Massaction.php" hash="a2dcb48c8b1bf5039e72bbff0f81b82e"/></dir><file name="Grid.php" hash="3700b8298380428295d717571565fe8c"/></dir></dir><dir name="Helper"><file name="Data.php" hash="06e4facd290ef54099d3776851a3672a"/></dir><dir name="Model"><dir name="Resource"><dir name="Eav"><dir name="Mysql4"><dir name="Product"><file name="Collection.php" hash="28767c33cd5e5914e9aad1a84e79d7df"/></dir></dir></dir></dir></dir><dir name="controllers"><dir name="Catalog"><file name="ProductController.php" hash="51082ba930014cc627de308261196733"/></dir></dir><dir name="etc"><file name="config.xml" hash="86d21f138cadff8f481dd4e4f827b451"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="iksanika_productrelater.xml" hash="35d21da2b8a52584954952725f64ded6"/></dir><dir name="template"><dir name="iksanika"><dir name="productrelater"><dir name="catalog"><dir name="product"><file name="grid.phtml" hash="a8c5fd65a65dd9ecf678b20b961ccd1e"/></dir><file name="product.phtml" hash="28aa8996480973a016117af744f7c3aa"/></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Iksanika_Productrelater.xml" hash="e904533beb0e0dc4f819fb271726bd58"/></dir></target><target name="mage"><dir name="js"><dir name="Iksanika"><dir name="productrelater"><file name="egsupplemental.js" hash="22e901dc1b8b22ae69c4c6241781c783"/><file name="jquery-1.9.1.min.js" hash="bcaf50298ada678da29e7cfa62470db5"/><file name="relatergrid.js" hash="0b8f50918dee4ee6fc76198473e6ddb7"/><file name="relaterproducts.js" hash="0045b5bcda3c95981d042aa135864192"/><dir name="resources"><dir name="css"><file name="productrelater.css" hash="a219b0e656329f2407835dbe346f81d3"/></dir></dir></dir></dir></dir><dir name="media"><dir name="iksanika"><dir name="productrelater"><file name="iksanika-logo.png" hash="445fc3621ed89dc3faa37202185e81b0"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
